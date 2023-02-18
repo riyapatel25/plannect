@@ -1,0 +1,25 @@
+{
+  "name": "plannect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riyapatel25/plannect.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riyapatel25/plannect/issues"
+  },
+  "homepage": "https://github.com/riyapatel25/plannect#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "prettier": "^2.8.4"
+  }
+}
