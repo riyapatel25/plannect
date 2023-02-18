@@ -15,6 +15,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>Plannect!!</p>
+        <p>this is our website</p>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
          {!data ? "Loading...": data}
