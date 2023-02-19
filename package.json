@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/riyapatel25/plannect#readme",
   "dependencies": {
+    "@typeform/embed-react": "^2.15.0",
     "express": "^4.18.2",
-    "prettier": "^2.8.4"
+    "prettier": "^2.8.4",
+    "react-icons": "^4.7.1"
   }
 }
