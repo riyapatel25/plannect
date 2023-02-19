@@ -107,6 +107,7 @@ p{
   margin-left:180px; 
 }
 
+/* for carousel */
 body{
   min-height: 100vh;
   display: flex; 
@@ -124,7 +125,6 @@ body{
 .slide-content{
   margin: 0 40px;
 }
-
 
 .slide-content{
   margin: 0 40px;
@@ -164,8 +164,16 @@ body{
   object-fit:cover; 
 }
 
+/* for connect*/
 
+.connection1{
+  border-radius: 25px; 
+  background-color:#98C7E9; 
+}
 
-
-
+h1 .name{
+  font-family: Roca; 
+  color: #024572; 
+  font-size: 30px; 
+}
 

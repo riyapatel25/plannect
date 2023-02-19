@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
 import Carousel from './components/Carousel'
+import Connect from './components/connect'
 import './index.css';
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
         <div className="content">
         <Profile />
         <Carousel />
-        
+        <Connect />
         </div>
        
         <p>
