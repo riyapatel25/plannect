@@ -1,26 +1,25 @@
-
 @font-face {
-    font-family: 'Roca';
-    src: local('Roca One Regular'), local('Roca-One-Regular'),
-        url('RocaOne-Rg.woff2') format('woff2'),
-        url('RocaOne-Rg.woff') format('woff'),
-        url('RocaOne-Rg.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: 'Roca';
+  src: local('Roca One Regular'), local('Roca-One-Regular'),
+      url('RocaOne-Rg.woff2') format('woff2'),
+      url('RocaOne-Rg.woff') format('woff'),
+      url('RocaOne-Rg.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
 .toplogo{
-  width: 260px;
-  height: auto;
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 20px; 
-  align-items: center; 
-  justify-content: center
-   
+width: 260px;
+height: auto;
+display: flex;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 20px; 
+align-items: center; 
+justify-content: center
+ 
 }
 
 .navbar{
@@ -33,72 +32,147 @@ justify-content: center;
 
 
 h1{
-  font-family: Roca; 
-  color: #024572; 
-  font-size: 30px; 
+font-family: Roca; 
+color: #024572; 
+font-size: 30px; 
 }
 
 h2{
-  font-family: Roca; 
-  padding: 25px; 
-  color: #024572; 
-  text-align: center; 
-  font-size: 70px; 
-  background-color: #98C7E9; 
-  border-radius: 10px; 
+font-family: Roca; 
+padding: 25px; 
+color: #024572; 
+text-align: center; 
+font-size: 70px; 
+background-color: #98C7E9; 
+border-radius: 10px; 
 }
 
+
 .profilepic{
-  margin-left: 200px; 
-  margin-top: 80px; 
-  border-radius: 50%;
+margin-left: 200px; 
+margin-top: 80px; 
+border-radius: 50%;
 }
 
 .intro{
-  float:right; 
-  margin-right: 200px; 
-  margin-top: 60px; 
+float:right; 
+margin-right: 200px; 
+margin-top: 60px; 
 }
 
 .links{
-  display: flex; 
-  font-family: Roca;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  margin-right: auto;
-  margin-left: auto;
-  align-items: center; 
-  justify-content: center; 
+display: flex; 
+font-family: Roca;
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+margin-right: auto;
+margin-left: auto;
+align-items: center; 
+justify-content: center; 
 }
 
 .link{
-  color: #024572;
-  margin-left: 140px;
-  margin-right: 140px;
+color: #024572;
+margin-left: 140px;
+margin-right: 140px;
 
 }
 .link:hover{
-  color: #78A300; 
+color: #78A300; 
 }
 
 
 p{
-  font-family: "DM Sans";
-  margin-left: 100px; 
-  color: #024572;
-  font-family: alata; 
-  float:right;
+font-family: "DM Sans";
+margin-left: 410px; 
+margin-right:200px; 
+position: relative; 
+bottom: 200px; 
+color: #024572;
+float:right;
+font-size:20px; 
 }
 
 .earth{
-  margin-left: 100px; 
-  width: 200px; 
-  height: auto; 
+margin-left: 180px; 
+width: 200px; 
+height: auto; 
 }
 
 .subhead{
-  margin-top: 50px; 
-  font-size: 30px; 
-  margin-left:100px; 
+margin-top: 50px; 
+font-size: 30px; 
+margin-left:180px; 
+}
+
+/* for carousel */
+body{
+min-height: 100vh;
+display: flex; 
+align-items: center; 
+justify-content:center; 
+background-color: white; 
+}
+
+.slide-container{
+max-width: 1120px; 
+width: 100%;
+background-color: gray; 
+padding: 40px 0; 
+}
+.slide-content{
+margin: 0 40px;
+}
+
+.slide-content{
+margin: 0 40px;
+}
+
+.card{
+border-radius: 25px; 
+background-color:#98C7E9; 
+}
+
+.image-content, .card-content{
+display:flex; 
+padding: 10px 40px; 
+flex-direction: column; 
+align-items: center; 
+}
+
+.image-content{
+row-gap: 5px; 
+}
+
+.card-image{
+position: relative; 
+height: 150px; 
+width: 150px; 
+}
+
+.topic{
+font-family: Roca; 
+font-size: 30px; 
+color:#024572
+}
+
+.card-image .cardimg{
+height: 100%; 
+width: 100%;
+object-fit:cover; 
+}
+
+/* for connect*/
+
+.connection1{
+border-radius: 25px; 
+background-color:#98C7E9; 
+padding: 100px;
+}
+
+h1 .name{
+font-family: Roca; 
+color: #024572; 
+font-size: 30px; 
 }
