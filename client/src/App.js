@@ -1,29 +1,46 @@
-import logo from './logo.svg';
-import React from "react";
 import './App.css';
+import React, { useEffect, useState } from "react";
+// import Form from "./components/form"
+import { PopupButton } from '@typeform/embed-react'
 
-function App() {
-  const [data, setData] = React.useState(null);
+import { Widget } from '@typeform/embed-react'
 
-  React.useEffect(() => {
-    fetch("/api")
-    .then((res) => res.json())
-    .then((data) => setData(data.message));
-    }, []);
+function App() { 
+ 
+  const [user, setUser] = useState([]);
+ 
 
-     return (
-    <div className="App">
-      <header className="App-header">
-        <p>Plannect!!</p>
-        <p>this is our website</p>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         {!data ? "Loading...": data}
-        </p>
+  const fetchAutoCodeData= async() => {
+    return await fetch("https://riyapatel.api.stdlib.com/plannect@dev/")
+          .then((response) => response.json())
+          .then((data) => setUser(data));
+        
+  }
+  
+  
+  useEffect(() => {
+    fetchAutoCodeData();
 
-      </header>
-    </div>
+  },[])
+
+  return (
+   
+    <main>
+      <iframe src="https://platform.twitter.com/widgets/tweet_button.html"></iframe>
+
+
+
+        <iframe 
+         src="https://jpywnvxt6c4.typeform.com/to/i7hFvACI"
+       ></iframe>
+       
+      <p>
+        Similar Interests:
+       {user.choices[0].text}
+      </p> 
+
+    </main>
   );
-}
 
+        }
 export default App;
