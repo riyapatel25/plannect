@@ -1,3 +1,4 @@
+
 import React from "react"
 import cardimg from './images/blueplanet.png';
 import cardimg2 from './images/greenplanet.png';
@@ -101,5 +102,7 @@ const Carousel = () => {
         
     );
 }
+
+
 
 export default Carousel; 
