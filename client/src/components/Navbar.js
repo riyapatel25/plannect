@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from 'react-scroll';
 import logo from './images/toplogo.png';
 
 const Navbar = () => {
@@ -6,9 +7,8 @@ const Navbar = () => {
         <nav className = "navbar">
            <img src={logo} alt="" className="toplogo"/>
             <div className="links">
-                <a href="/" className="link">Profile</a>
-                <a href="/" className="link">Connect</a>
-                <a href="/" className="link">Matches</a>
+                <Link to="Profile" spy={true} smooth={true} offset={50} duration={500} className="link">Profile</Link>
+                <Link to="Plannections" spy={true} smooth={true} offset={50} duration={500} className="link">Plannections</Link>
 
             </div>
         </nav>

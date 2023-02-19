@@ -4,20 +4,24 @@ import profilepic from './images/profile.jpeg';
 
 const Profile = () => {
     return (
-        <div className= "Profile">
+        <div className= "Profile" id='Profile'>
             <img src={profilepic} alt="" className="profilepic"/>
             <div className = "intro">
             <h1 className="welcome">Welcome to your Profile!</h1>
-            <h2 className="name">John Doe</h2>
+            <h2>Joey Doe</h2>
             </div>
             <div className = "mybio">
                 <h1 className="subhead">My Bio</h1>
                 <img src={earth} alt="" className="earth"/>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Quisque gravida orci sit amet risus dictum, in auctor nunc pellentesque. Nam efficitur euismod tellus quis pharetra. 
-                    Mauris molestie at lorem et imperdiet. Donec eu dui cursus, ullamcorper velit eu, placerat justo. 
-                    Duis ornare sodales magna, sit amet faucibus sem efficitur vitae. Nulla facilisis ut libero dignissim tempus. 
+                Hi, I'm Joey, and I'm a huge fan of basketball, sewing, and coding. 
+                Basketball has been a part of my life since I was a kid. 
+                I enjoy taking some time to focus on my sewing projects, which allow me to express my creativity and attention to detail. 
+                I'm also deeply interested in technology and programming.
+                In fact, I'm currently working on developing a mobile app that will connect students with volunteer opportunities. 
+                I'm always looking for new ways to grow and improve, both in my personal and professional life. 
+                I'm naturally curious and driven, and I'm always eager to learn new things and explore new opportunities.
+                With my diverse range of interests and skills, I'm excited to see where life takes me next! 
                 </p>
 
             </div>
