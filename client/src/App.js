@@ -1,32 +1,43 @@
 import './App.css';
-
 import React, { useEffect, useState } from "react";
+// import Form from "./components/form"
+import { PopupButton } from '@typeform/embed-react'
+
+import { Widget } from '@typeform/embed-react'
 
 function App() { 
  
   const [user, setUser] = useState([]);
  
 
-  const fetchAutoCodeData= () => {
-    return fetch("https://riyapatel.api.stdlib.com/plannect@dev/")
+  const fetchAutoCodeData= async() => {
+    return await fetch("https://riyapatel.api.stdlib.com/plannect@dev/")
           .then((response) => response.json())
           .then((data) => setUser(data));
         
   }
-
+  
+  
   useEffect(() => {
-    // fetchData();
     fetchAutoCodeData();
-    
 
   },[])
 
   return (
+   
     <main>
-      <h1>User List</h1>
+      <iframe src="https://platform.twitter.com/widgets/tweet_button.html"></iframe>
+
+
+
+        <iframe 
+         src="https://jpywnvxt6c4.typeform.com/to/i7hFvACI"
+       ></iframe>
+       
       <p>
-       {user.object}
-      </p>
+        Similar Interests:
+       {user.choices[0].text}
+      </p> 
 
     </main>
   );
