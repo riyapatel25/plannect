@@ -2,6 +2,7 @@
 import React from "react";
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
+import Carousel from './components/Carousel'
 import './index.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Navbar />
         <div className="content">
         <Profile />
+        <Carousel />
         
         </div>
        

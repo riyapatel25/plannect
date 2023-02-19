@@ -48,6 +48,7 @@ h2{
   border-radius: 10px; 
 }
 
+
 .profilepic{
   margin-left: 200px; 
   margin-top: 80px; 
@@ -85,14 +86,17 @@ h2{
 
 p{
   font-family: "DM Sans";
-  margin-left: 100px; 
+  margin-left: 410px; 
+  margin-right:200px; 
+  position: relative; 
+  bottom: 200px; 
   color: #024572;
-  font-family: alata; 
   float:right;
+  font-size:20px; 
 }
 
 .earth{
-  margin-left: 100px; 
+  margin-left: 180px; 
   width: 200px; 
   height: auto; 
 }
@@ -100,5 +104,68 @@ p{
 .subhead{
   margin-top: 50px; 
   font-size: 30px; 
-  margin-left:100px; 
+  margin-left:180px; 
 }
+
+body{
+  min-height: 100vh;
+  display: flex; 
+  align-items: center; 
+  justify-content:center; 
+  background-color: white; 
+}
+
+.slide-container{
+  max-width: 1120px; 
+  width: 100%;
+  background-color: gray; 
+  padding: 40px 0; 
+}
+.slide-content{
+  margin: 0 40px;
+}
+
+
+.slide-content{
+  margin: 0 40px;
+}
+
+.card{
+  border-radius: 25px; 
+  background-color:#98C7E9; 
+}
+
+.image-content, .card-content{
+  display:flex; 
+  padding: 10px 40px; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.image-content{
+  row-gap: 5px; 
+}
+
+.card-image{
+  position: relative; 
+  height: 150px; 
+  width: 150px; 
+}
+
+.topic{
+  font-family: Roca; 
+  font-size: 30px; 
+  color:#024572
+}
+
+.card-image .cardimg{
+  height: 100%; 
+  width: 100%;
+  object-fit:cover; 
+}
+
+
+
+
+
+

@@ -1,9 +1,6 @@
 import React from "react"
 import logo from './images/toplogo.png';
 
-
-
-
 const Navbar = () => {
     return (
         <nav className = "navbar">
