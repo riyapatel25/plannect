@@ -1,6 +1,8 @@
 
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
+import Carousel from './components/Carousel'
+import Connect from './components/connect'
 import './index.css';
 import React, { useEffect, useState } from "react";
 import Carousel from './components/Carousel'
@@ -33,6 +35,7 @@ function App() {
         <div className="content">
         <Profile />
         <Carousel />
+
         <div className= "Plannections" id='Plannections'>
             <h1 className="subhead">Your Plannections: </h1>
             <div className="card-content1">

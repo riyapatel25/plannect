@@ -2,9 +2,6 @@ import React from "react"
 import {Link} from 'react-scroll';
 import logo from './images/toplogo.png';
 
-
-
-
 const Navbar = () => {
     return (
         <nav className = "navbar">
